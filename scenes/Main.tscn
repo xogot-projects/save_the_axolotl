@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://640nvt5xd0hp"]
+[gd_scene load_steps=10 format=3 uid="uid://640nvt5xd0hp"]
 
 [ext_resource type="PackedScene" uid="uid://chkrtmaq62wjs" path="res://scenes/Player.tscn" id="1"]
 [ext_resource type="Script" uid="uid://08sebrvedhk7" path="res://scripts/Main.gd" id="2"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://xqxpkrclfrl2" path="res://scenes/HUD.tscn" id="4"]
 [ext_resource type="AudioStream" uid="uid://me4abjacp1ll" path="res://art/House In a Forest Loop.ogg" id="5"]
 [ext_resource type="AudioStream" uid="uid://dw816ryegbfsj" path="res://art/gameover.wav" id="6"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="8_jlsqs"]
 
 [sub_resource type="Curve2D" id="1"]
 _data = {
@@ -27,6 +28,7 @@ grow_vertical = 2
 texture = ExtResource("3_jw32o")
 expand_mode = 3
 stretch_mode = 4
+metadata/_edit_use_anchors_ = true
 
 [node name="Player" parent="." instance=ExtResource("1")]
 
@@ -54,6 +56,21 @@ stream = ExtResource("5")
 
 [node name="DeathSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Virtual Joystick Left" parent="UI" instance=ExtResource("8_jlsqs")]
+anchors_preset = 15
+anchor_top = 0.0
+anchor_right = 1.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+joystick_mode = 2
+visibility_mode = 2
+action_left = "_left"
 
 [connection signal="hit" from="Player" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

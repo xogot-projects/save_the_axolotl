@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Save the Axolotl"
 run/main_scene="uid://640nvt5xd0hp"
-config/features=PackedStringArray("4.4", "Mobile")
+config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
 [audio]
@@ -59,12 +59,13 @@ move_down={
 
 [input_devices]
 
-virtual_controller/ios/enable_controller=true
 virtual_controller/ios/enable_left_thumbstick=false
+virtual_controller/ios/enable_right_thumbstick=false
 virtual_controller/ios/enable_button_a=false
 virtual_controller/ios/enable_button_b=false
 virtual_controller/ios/enable_button_x=false
 virtual_controller/ios/enable_button_y=false
+pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
@@ -78,14 +79,14 @@ project/editorState=[{
 "path": "res://scripts/Player.gd",
 "type": "file"
 }, {
-"column": 37,
+"column": 0,
 "line": 5,
 "path": "res://scripts/Mob.gd",
 "type": "file"
 }, {
-"column": 51,
+"column": 22,
 "current": true,
-"line": 73,
+"line": 12,
 "path": "res://scripts/Main.gd",
 "type": "file"
 }, {
@@ -93,7 +94,13 @@ project/editorState=[{
 "line": 0,
 "path": "res://scripts/HUD.gd",
 "type": "file"
+}, {
+"column": 0,
+"line": 0,
+"path": "res://addons/virtual_joystick/virtual_joystick.gd",
+"type": "file"
 }]
 project/breakpoints={
-"res://scenes/main.gd": PackedInt32Array(5)
+"res://scenes/main.gd": PackedInt32Array(5),
+"res://scripts/Main.gd": PackedInt32Array()
 }
