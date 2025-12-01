@@ -70,7 +70,10 @@ grow_horizontal = 2
 grow_vertical = 2
 joystick_mode = 2
 visibility_mode = 2
-action_left = "_left"
+action_left = "move_left"
+action_right = "move_right"
+action_up = "move_up"
+action_down = "move_down"
 
 [connection signal="hit" from="Player" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
