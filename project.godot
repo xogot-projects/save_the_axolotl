@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="Save the Axolotl"
+config/version="1.1"
 run/main_scene="uid://640nvt5xd0hp"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://art/icon.png"
 
 [audio]
 
@@ -84,7 +85,7 @@ project/editorState=[{
 "path": "res://scripts/Mob.gd",
 "type": "file"
 }, {
-"column": 43,
+"column": 0,
 "current": true,
 "line": 71,
 "path": "res://scripts/Main.gd",
