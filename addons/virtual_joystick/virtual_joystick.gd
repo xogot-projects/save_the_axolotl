@@ -65,8 +65,10 @@ var _touch_index : int = -1
 # FUNCTIONS
 
 func _ready() -> void:
-	if ProjectSettings.get_setting("input_devices/pointing/emulate_mouse_from_touch"):
-		printerr("The Project Setting 'emulate_mouse_from_touch' should be set to False")
+#	Suppress this error until Button works with multitouch 
+#	https://github.com/godotengine/godot/pull/110893
+#	if ProjectSettings.get_setting("input_devices/pointing/emulate_mouse_from_touch"):
+#		printerr("The Project Setting 'emulate_mouse_from_touch' should be set to False")
 	if not ProjectSettings.get_setting("input_devices/pointing/emulate_touch_from_mouse"):
 		printerr("The Project Setting 'emulate_touch_from_mouse' should be set to True")
 	
