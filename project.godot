@@ -8,12 +8,16 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Save the Axolotl"
 config/version="1.1"
 run/main_scene="uid://640nvt5xd0hp"
-config/features=PackedStringArray("4.4", "Mobile")
+config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://art/icon.png"
 
 [audio]
@@ -81,13 +85,13 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 5,
+"line": 0,
 "path": "res://scripts/Mob.gd",
 "type": "file"
 }, {
 "column": 0,
 "current": true,
-"line": 71,
+"line": 0,
 "path": "res://scripts/Main.gd",
 "type": "file"
 }, {
@@ -105,3 +109,4 @@ project/breakpoints={
 "res://scenes/main.gd": PackedInt32Array(5),
 "res://scripts/Main.gd": PackedInt32Array()
 }
+project/disabled_breakpoints={}
