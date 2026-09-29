@@ -99,11 +99,6 @@ project/editorState=[{
 "line": 0,
 "path": "res://scripts/HUD.gd",
 "type": "file"
-}, {
-"column": 0,
-"line": 0,
-"path": "res://addons/virtual_joystick/virtual_joystick.gd",
-"type": "file"
 }]
 project/breakpoints={
 "res://scenes/main.gd": PackedInt32Array(5),
